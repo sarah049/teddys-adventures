@@ -1,0 +1,14 @@
+
+.teddy {
+    /* bottom: 500px; */
+    left: 100px;
+    background: url("/public/img/teddy_transparent.png");
+    background-size: 90px;
+    height: 90px;
+    width: 90px;
+    /* max-height: 70px;
+    max-width: 70px; */
+    z-index: 3;
+    display: flex;
+  }
+

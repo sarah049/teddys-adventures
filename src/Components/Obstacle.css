@@ -1,0 +1,65 @@
+.obstacle-scroll-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.river {
+    background: url("/public/img/river_transparent.png") repeat-x;
+    background-size: 184px;
+    width: 184px;
+    height: 333px;
+    right: -100px;
+    bottom: 0px;
+    z-index: 1;
+    position: relative;
+    animation: slide 7s linear forwards; /*fowards ensures it stays out of view once it leaves frame*/
+    animation-iteration-count: infinite; /*appear only once*/
+    animation-delay: 1s;
+    overflow: hidden;
+}
+
+.oneRock {
+    background: url("/public/img/rock_transparent.png") repeat-x;
+    background-size: 70px;
+    width: 70px;
+    height: 40px;
+    right: -100px;
+    bottom: 200px;
+    z-index: 1;
+    position: relative;
+    animation: slide 7s linear forwards; /*fowards ensures it stays out of view once it leaves frame*/
+    animation-iteration-count: infinite; /*appear only once*/
+    animation-delay: 1s;
+}
+
+.tree {
+    background: url("/public/img/tree_transparent.png") repeat-x;
+    background-size: 190px;
+    width: 180px;
+    height: 220px;
+    right: -100px;
+    bottom: 200px;
+    z-index: 1;
+    position: relative;
+    animation: slide 7s linear forwards; /*fowards ensures it stays out of view once it leaves frame*/
+    animation-iteration-count: infinite; /*appear only once*/
+    animation-delay: 0s;
+}
+
+.twoRocks {
+    width: 30px;
+}
+
+.wallOfRocks {
+    width: 30px;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-200vw); /*needs to be the same as width=200% for smooth looping*/
+    }
+  }

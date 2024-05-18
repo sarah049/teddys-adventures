@@ -1,0 +1,1 @@
+1. Title sequence - need to draw or do font for now, use framer to animate bouncing
